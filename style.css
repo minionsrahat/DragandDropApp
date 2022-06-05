@@ -16,6 +16,7 @@
 .color-box{
     width: 150px;
     height: 150px;
+    cursor: move;
 }
 .color-1{
     background-color: #008080;
@@ -43,4 +44,9 @@
 }
 .color-9{
     background-color: #FFA1A1;
+}
+
+#drag{
+    opacity: 0.5;
+    border: 3px solid red;
 }
