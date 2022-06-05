@@ -16,7 +16,6 @@ colorBox.forEach((box) => {
         })
 
 })
-
 columns.forEach((column)=>{
     column.addEventListener('dragover',(e)=>{
         e.preventDefault()
