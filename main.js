@@ -16,3 +16,33 @@ colorBox.forEach((box) => {
         })
 
 })
+// for (const column of columns) {
+//     column.addEventListener('dragover', (e) => {
+//         /* ----------- prevent the default behaviour that is not letting any element be dropped inside the column div-------------- */
+
+//         //const currentDraggringBox = document.getElementsByClassName('dragging');
+//         const currentDraggringBox = document.getElementById('dragging');
+//         const boxesOfCurrenrtColumn = column.children;
+//         let count = 0
+//         for (const box of boxesOfCurrenrtColumn) {
+//             if (currentDraggringBox.classList[1] === box.classList[1]) {
+//                 count = count + 1;
+//             }
+//         }
+//         if (count === 0) {
+//             e.preventDefault();
+//             column.appendChild(currentDraggringBox);
+//             //column.appendChild(currentDraggringBox[0]);
+//         }
+//     })
+// }
+
+columns.forEach((column)=>{
+    column.addEventListener('dragover',(e)=>{
+        const selectedDragElement=document.querySelector('#drag')
+        if(column.querySelector(`.${selectedDragElement?.classList[1]}`)){
+            e.preventDefault()
+            column.appendChild(selectedDragElement)
+        }
+    })
+})
