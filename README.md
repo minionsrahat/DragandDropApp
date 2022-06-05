@@ -13,4 +13,3 @@ Live Site Link: [https://dragdrop123.netlify.app/](https://dragdrop123.netlify.a
 ### How to run this Project
 * Download or clone the repository
 * Open index.html file in any of the browser
-
